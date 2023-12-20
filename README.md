@@ -7,3 +7,5 @@ dec 20 added indexhome page.
 added the image folder,
 
 also added js files
+
+remaing files will be uploaded soons
