@@ -5,3 +5,5 @@ incoprated with js and jquery functions making the web app more responsive.
 
 dec 20 added indexhome page.
 added the image folder,
+
+also added js files
