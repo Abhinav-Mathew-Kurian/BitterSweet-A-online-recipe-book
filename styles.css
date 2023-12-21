@@ -1,0 +1,491 @@
+body{
+    background-color: rgb(242, 239, 235);
+    margin: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.538);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+}
+.logo{
+    margin-left: 15px;
+    z-index: 1;
+    
+}
+
+#center{
+    padding-right: 170px;
+}
+
+.logo a {
+    font-family: 'Preahvihear', sans-serif;
+    text-decoration: none;
+    color: rgb(9, 67, 9);
+    font-size: larger;
+   
+
+}
+.heading{
+    padding-left: 150px;
+    z-index: 1;
+}
+
+.heading h1{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: rgb(9, 67, 9);
+}
+nav{
+    margin-right: 15px;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 30px; 
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-weight: 800;
+    color: rgb(9, 67, 9);  
+}
+.container{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.vegie{
+    padding-top: 60px;
+    float: left;
+    margin-left: -50px;
+}
+.decoration {
+    float: right;
+    margin-right: -25px;
+}
+.grid-container{
+   margin-top: 60px;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    width:600px;
+    gap: 40px;
+}
+
+.one{
+    grid-column: 1/2;
+    /* border:5px  rgb(9, 67, 9) solid; */
+    border-radius: 20px;
+    grid-row: 1/3;
+}
+
+/* Existing styles... */
+
+.card {
+    display: none; /* Hide all cards initially */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .byone{
+    background-image: url("./images/image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .bytwo{
+     background-image: url("./images/image-2.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     }
+    .bythree{
+     background-image: url("./images/image-3.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+    }
+    .byfour{
+     background-image: url("./images/image-4.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+                }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the card */
+  }
+  
+  .card.active {
+    display: block; /* Show the active card */
+  }
+#nextBtn{
+   
+    font-size: 55px;
+    color: rgb(9, 67, 9);
+    margin-top: 35px;
+}  
+
+.two{
+    grid-column: 2/3;
+    /* border:5px  rgb(9, 67, 9) solid; */
+    border-radius: 20px;
+    grid-row: 0/1.5;
+}
+
+.three{
+
+    grid-column: 2/3;
+    /* border:5px  rgb(9, 67, 9) solid; */
+    border-radius: 20px;
+    grid-row: 1.5/3;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Saira', sans-serif;
+    
+
+}
+section{
+    margin-top: 10px;
+}
+
+.title{
+   
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.466);
+    margin-top: 430px;
+    text-align: center;
+
+}
+
+.title  a{
+    text-decoration:overline;
+    color:rgb(255, 255, 255);
+    font-family: 'Saira', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+.para{
+    font-family: 'Saira', sans-serif;
+    color: rgb(9, 67, 9) ;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.card.active {
+    transform: scale(1.0);
+  }
+  
+
+
+  /* ----------------------------------------------------recipe page-------------------------------------------------------------- */
+ .recipeContainer{
+    background-color: rgb(230, 224, 217);
+    padding-bottom: 150px;
+ } 
+ .recipeheading{
+    margin-top: 14px;
+    text-align: center;
+  }
+.recipeheading h2{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 2rem;
+    text-decoration:overline;
+    color: rgb(9, 67, 9);
+    font-weight: 800;
+}
+
+.recipegrid{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 70vh;
+    /* border: 5px solid black; */
+    gap: 30px;
+}
+
+.rone{
+    grid-column: 1/2;
+    grid-row:1/5;
+    /* border: 5px solid black; */
+    background-image: url("./images/recipe1-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 110px;
+    height: 500px;
+    
+}
+.rtwo{
+    grid-column: 2/3;
+    grid-row: 1/1.75;
+    /* border: 5px solid black; */
+    background-image: url("./images/biriyanicut1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.rthree{
+    grid-column: 2/3;
+    grid-row: 1.75/2.5;
+    /* border: 5px solid black; */
+    background-image: url("./images/pizzacut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rfour{
+    grid-column: 2/3;
+    grid-row: 2.5/3.25;
+    /* border: 5px solid black; */
+    background-image: url("./images/meatball.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rfive{
+    grid-column: 2/3;
+    grid-row: 3.25/4;
+     /* border: 5px solid black; */
+     background-image: url("./images/steak.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.rsix{
+    grid-column: 3/4;
+    grid-row:1/5;
+    background-image: url("./images/recipe2-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 110px;
+    height: 550px;
+    
+}
+
+.incard{
+    text-align: center;
+}
+.incard a{
+    color: white;
+    font-family: 'Saira', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.675);
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.subhead{
+    text-align: center;
+    margin-top: 10px;
+}
+.subhead p{
+    font-family:'Saira', sans-serif ;
+    color: rgb(9, 67, 9) ;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.rbtn{
+    text-align: center;
+    margin-top: 175px;;
+}
+.recipebtn{
+    background-color:  rgba(9, 67, 9, 0.684);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: antiquewhite;
+    font-weight: 800;
+    font-family: 'Saira', sans-serif;
+    border: none;
+}
+
+.recipebtn:hover{
+    background-color: rgba(9, 67, 9, 0.884) ;
+    color: aliceblue;
+}
+
+#recipeid{
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-weight: 800;
+    color: rgb(9, 67, 9);  
+}
+
+#recipeid:hover{
+    background-color: rgba(9, 67, 9, 0.67) ;
+    
+    padding-left: 5px ;
+    padding-right: 5px ;
+    border-radius: 5px;
+}
+#recipeid a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#aboutid:hover{
+    background-color: rgba(9, 67, 9, 0.67) ;
+    
+    padding-left: 5px ;
+    padding-right: 5px ;
+    border-radius: 5px;
+}
+#aboutid a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#contactid:hover{
+    background-color: rgba(9, 67, 9, 0.67) ;
+    
+    padding-left: 5px ;
+    padding-right: 5px ;
+    border-radius: 5px;
+}
+#contact a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/* ------------------------------------------------------aabout us------------------------------------------------------------- */
+.aboutcontainer{
+    background-color: rgb(242, 239, 235);
+    height: 80vh;
+}
+.headabout{
+    text-align: center;
+    margin-top: -25px;
+}
+.headabout h2{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 2rem;
+    text-decoration:overline;
+    color: rgb(9, 67, 9);
+    font-weight: 800;
+}
+
+.para p{
+    margin-top: 50px;
+    text-align: center;
+}
+.creator{
+    text-align: center;
+    margin-top: 30px;
+}
+.creator h2{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+    text-decoration:overline;
+    color: rgb(9, 67, 9);
+    font-weight: 800;
+}
+.img{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.img img{
+    height: 170px;
+    border: 2px solid rgb(9, 67, 9);
+    border-radius: 85px;
+    box-shadow: 5px 5px 50px rgb(58, 211, 47);
+}
+.contactcontainer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgba(34, 69, 37, 0.900);
+}
+.contacthead h2{
+    margin-top: 40px;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 2rem;
+    color: rgb(245, 248, 238);
+    font-weight: 800;
+}
+.email{
+    margin-top: 50px;
+    font-family:'Saira', sans-serif ;
+    color: antiquewhite;
+}
+
+.linkedin {
+    margin-top: 20px;
+    font-family:'Saira', sans-serif ;
+    color: antiquewhite;
+}
+.linkedin a{
+    color: antiquewhite;
+}
+
+.end{
+    margin-top: 20px;
+    font-family:'Saira', sans-serif ;
+    color: antiquewhite;
+}
+
+.recontain{
+    margin-top: 130px;
+}
+.reheading{
+    text-align: center;
+}
+
+.reheading h1{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 3rem;
+    color:  rgb(9, 67, 9);
+}
+
+.resubheading{
+    text-align: center;
+}
+
+.resubheading h2{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 2rem;
+    color:  rgb(9, 67, 9);
+    text-decoration: overline;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    font-family:'Saira', sans-serif ;
+    color:  rgb(9, 67, 9);
+    font-size: 18px;
+}
