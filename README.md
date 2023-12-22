@@ -15,3 +15,4 @@ FILES UPLOADED
 recipie.html and other recipie are given blank.
 the reason is its just a simple wesite donot want to repeat code until any purpose is served.
 BitterSweet is made us a fun skill shocasing
+thnx for reading!! bye
