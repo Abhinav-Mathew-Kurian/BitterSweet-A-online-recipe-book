@@ -11,3 +11,5 @@ also added js files
 remaing files will be uploaded soons
 
 FILES UPLOADED
+
+recipie.html and other recipie are given blank
