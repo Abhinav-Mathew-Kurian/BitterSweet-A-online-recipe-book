@@ -9,3 +9,5 @@ added the image folder,
 also added js files
 
 remaing files will be uploaded soons
+
+FILES UPLOADED
